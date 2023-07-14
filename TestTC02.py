@@ -19,7 +19,7 @@ class Landing(unittest.TestCase):
 
     def clickAppointment(self):
         menu_page = MainPage(self.driver)
-        menu_page.click_lb_appointment()
+        menu_page.click_href_email()
         time.sleep(5)
 
     def tearDown(self):
