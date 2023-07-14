@@ -20,7 +20,9 @@ class Landing(unittest.TestCase):
     def clickAppointment(self):
         menu_page = MainPage(self.driver)
         menu_page.click_sidebar()
-        time.sleep(5)
+        time.sleep(3)
+        menu_page.click_sidebar_home()
+        time.sleep(2)
 
     def tearDown(self):
         self.driver.close()

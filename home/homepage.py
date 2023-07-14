@@ -29,3 +29,13 @@ class MainPage(BasePage):
     def click_sidebar(self):
         element = self.driver.find_element(*LandingPageLocators.BT_SIDEBAR)
         element.click()
+
+    def click_sidebar_home(self):
+        element = self.driver.find_element(
+            *LandingPageLocators.BT_SIDEBAR_HOME)
+        element.click()
+
+    def click_sidebar_login(self):
+        element = self.driver.find_element(
+            *LandingPageLocators.BT_SIDEBAR_LOGIN)
+        element.click()
